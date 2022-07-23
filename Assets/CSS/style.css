@@ -1,0 +1,284 @@
+* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    position: relative;
+    background-color: #2196f3;
+    margin-bottom: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196f3;
+    margin-top: 20px;
+    position: inherit;
+    bottom: 0px;
+}
+
+.footer>div {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    width: 33.3%;
+    color: whitesmoke;
+    animation-duration: 1, 5s;
+    animation-name: slidein;
+}
+
+.footer>div>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.footer>div>a::placeholder {
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.logo>.tittle>h1 {
+    font-size: 35pt;
+    color: whitesmoke;
+
+}
+
+.tittle>h1>a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.log {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    margin: 0px 20px;
+    align-items: center;
+}
+
+#regisA {
+    width: 25%;
+    height: 50%;
+    background-color: #9acef8;
+    border-radius: 25px;
+    color: whitesmoke;
+    border: none;
+
+    margin: 0px 5px;
+}
+
+#regisA>button {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    font-size: 10pt;
+}
+
+#regisA:hover {
+    background-color: #006ac7;
+
+}
+
+#loginA {
+    width: 25%;
+    height: 50%;
+    background-color: #9acef8;
+    border-radius: 25px;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    margin: 0px 5px;
+}
+
+#loginA>button {
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: transparent;
+    border: none;
+    font-size: 10pt;
+}
+
+#loginA:hover {
+    background-color: #006ac7;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0px 50px;
+    position: relative;
+}
+
+.container-target {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+.target {
+    width: 80%;
+    height: 500px;
+    margin: 20px 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: #c3e3fd;
+    border: 3px solid #6eb8f5;
+
+}
+
+.target:hover {
+    background-color: #9acef8;
+}
+
+.target a {
+    text-decoration: none;
+}
+
+.target img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    border-bottom: 3px solid #6eb8f5;
+    box-sizing: border-box;
+}
+
+.target h3 {
+    text-align: center;
+    padding: 20px 0px;
+    color: black;
+}
+
+.target p {
+    text-align: justify;
+    padding: 0px 20px;
+    color: black;
+}
+
+/*ESTILOS MODAL */
+
+.texto {
+    margin: 0px 80px;
+    display: flex;
+    text-align: justify;
+}
+
+.imagenes {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+.imagenes>img {
+    margin: 10px;
+}
+
+.modelRegister {
+    position: absolute;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid #6eb8f5;
+    box-sizing: border-box;
+    z-index: 10;
+    color: whitesmoke;
+    background-color: #6eb8f5;
+    align-items: center;
+    transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+
+    left: 50%;
+}
+
+.modelLogIn {
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid #6eb8f5;
+    box-sizing: border-box;
+    z-index: 10;
+    color: whitesmoke;
+    background-color: #6eb8f5;
+    align-items: center;
+    transform: translateX(-50%) translateY(-50%);
+    left: 50%;
+    position: relative;
+    top: 50%;
+}
+
+.modelRegister>p {
+    font-size: 22pt;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+
+.modelLogIn>p {
+    font-size: 22pt;
+    color: whitesmoke;
+    text-align: center;
+    margin: 10px 0px 5px 0px;
+}
+
+#register {
+    width: 85%;
+    display: flex;
+    margin: 5px 20px 10px 20px;
+    flex-direction: column;
+}
+
+#register>input::placeholder {
+    text-align: center;
+}
+
+#logIn {
+    width: 85%;
+    display: flex;
+    margin: 5px 20px 10px 20px;
+    flex-direction: column;
+}
+
+#logIn>input::placeholder {
+    text-align: center;
+}
+
+form>input {
+    border: 1px solid #9acef8;
+    border-radius: 5px;
+    width: 100%;
+    margin: 5px 0px;
+    background-color: transparent;
+    height: 25px;
+    color: whitesmoke;
+}
+
+#envioDatos {
+    background-color: #9acef8;
+}
